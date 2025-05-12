@@ -1,0 +1,29 @@
+export interface BarbershopData {
+  id: number;
+  imageUrl: string;
+  name: string;
+  rating: number;
+  reviewCount: number;
+  category: string;
+  businessAge: string;
+  closingTime: string;
+  status: string;
+  location: string;
+  phone: string;
+  services: string;
+  websiteUrl: string;
+  websiteLabel: string;
+  directionsUrl: string;
+  directionsLabel: string;
+  callUrl: string;
+  callLabel: string;
+  random1: string;
+  random2: string;
+  instagramUrl: string;
+  facebookUrl: string;
+  youtubeUrl: string;
+  captions: string;
+  socialurls: string;
+  leadNumber: number;
+  address: string;
+} 

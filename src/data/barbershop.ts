@@ -1,0 +1,31 @@
+import { BarbershopData } from '@/types/barbershop';
+
+export const barbershopData: BarbershopData = {
+  id: 8,
+  imageUrl: "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqg6yWQVyf5OC0RtXx1CXfbUyVYQYBFDLOuSbHdoJkM9CdcGQvPTPvrPJjaiFTwbcvGJ5F3BBTQK_xCg1a0BneyZYSBKnG8u_MW1JF7g_IJtNNJAbqK4ravkgZWOmnmnPRgTrroNA=w114-h114-n-k-no",
+  name: "Pepe Le Barbershop",
+  rating: 4.9,
+  reviewCount: -141,
+  category: "Barber shop",
+  businessAge: "",
+  closingTime: "⋅ Closes 8 pm",
+  status: "Open",
+  location: "Denton, TX, United States",
+  phone: "‪+19402084770‬",
+  services: "On-site services",
+  websiteUrl: "https://www.pepelebarbershop.com/",
+  websiteLabel: "Website",
+  directionsUrl: "https://maps.google.com/maps?um=1&fb=1&gl=in&sa=X&geocode=Kc_yq-KTy02GMZtG32K9U14J&daddr=721+S+Elm+St+%23105,+Denton,+TX+76201,+United+States&ved=2ahUKEwjN076ZsoCNAxVX0oQAHdHkIAMQ48ADegUIABCNAQ",
+  directionsLabel: "Directions",
+  callUrl: "‪+19402084770‬",
+  callLabel: "Call",
+  random1: "",
+  random2: "",
+  instagramUrl: "",
+  facebookUrl: "",
+  youtubeUrl: "",
+  captions: "",
+  socialurls: "",
+  leadNumber: 8,
+  address: "721 S Elm St #105, Denton, TX 76201, United States"
+}; 
