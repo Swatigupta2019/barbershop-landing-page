@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { StarIcon } from '@heroicons/react/24/solid';
+import Image from 'next/image';
 
 const testimonials = [
   {
@@ -18,7 +19,7 @@ const testimonials = [
     name: "Michael Johnson",
     role: "Business Professional",
     image: "https://i.pravatar.cc/150?img=2",
-    content: "Their hot towel shave service is exceptional. It's more than a haircut - it's a premium grooming experience.",
+    content: "Their hot towel shave service is exceptional. It&apos;s more than a haircut - it&apos;s a premium grooming experience.",
     rating: 5
   },
   {
@@ -49,7 +50,7 @@ export default function Testimonials() {
             What Our Clients Say
           </h2>
           <p className="mt-4 text-xl text-gray-400">
-            Don't just take our word for it
+            Don&apos;t just take our word for it
           </p>
         </div>
 
@@ -65,18 +66,21 @@ export default function Testimonials() {
                 className="absolute inset-0"
               >
                 <div className="flex flex-col items-center">
-                  <img
-                    src={testimonials[currentTestimonial].image}
-                    alt={testimonials[currentTestimonial].name}
-                    className="w-24 h-24 rounded-full object-cover mb-6"
-                  />
+                  <div className="relative w-24 h-24 mb-6">
+                    <Image
+                      src={testimonials[currentTestimonial].image}
+                      alt={testimonials[currentTestimonial].name}
+                      fill
+                      className="rounded-full object-cover"
+                    />
+                  </div>
                   <div className="flex gap-1 mb-6">
                     {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
                       <StarIcon key={i} className="h-6 w-6 text-yellow-400" />
                     ))}
                   </div>
                   <blockquote className="text-xl italic text-center max-w-2xl mb-6">
-                    "{testimonials[currentTestimonial].content}"
+                    &ldquo;{testimonials[currentTestimonial].content}&rdquo;
                   </blockquote>
                   <div className="text-center">
                     <div className="font-semibold text-lg">

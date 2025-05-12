@@ -33,7 +33,7 @@ export default function Hero() {
             Premium Barber Services
           </h1>
           <p className="text-xl md:text-2xl mb-12 text-gray-300">
-            Experience the finest in men's grooming at Pepe Le Barbershop. 
+            Experience the finest in men&apos;s grooming at Pepe Le Barbershop. 
             Where style meets tradition.
           </p>
           
